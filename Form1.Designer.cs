@@ -40,18 +40,6 @@ namespace Study_RecursionFunction
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gboxCheckList = new System.Windows.Forms.GroupBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
@@ -65,15 +53,27 @@ namespace Study_RecursionFunction
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lboxResult = new System.Windows.Forms.ListBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numLevel)).BeginInit();
             this.gboxCheckList.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -205,113 +205,6 @@ namespace Study_RecursionFunction
             this.gboxCheckList.TabStop = false;
             this.gboxCheckList.Text = "Check List";
             // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.groupBox7);
-            this.groupBox6.Controls.Add(this.button6);
-            this.groupBox6.Controls.Add(this.textBox6);
-            this.groupBox6.Controls.Add(this.label8);
-            this.groupBox6.Location = new System.Drawing.Point(13, 230);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(425, 200);
-            this.groupBox6.TabIndex = 4;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Level 1";
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.groupBox8);
-            this.groupBox7.Controls.Add(this.button5);
-            this.groupBox7.Controls.Add(this.textBox5);
-            this.groupBox7.Controls.Add(this.label7);
-            this.groupBox7.Location = new System.Drawing.Point(6, 56);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(413, 138);
-            this.groupBox7.TabIndex = 3;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Level 2";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.button7);
-            this.groupBox8.Controls.Add(this.textBox7);
-            this.groupBox8.Controls.Add(this.label9);
-            this.groupBox8.Location = new System.Drawing.Point(9, 56);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(404, 66);
-            this.groupBox8.TabIndex = 4;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Level 3";
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(274, 24);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(118, 26);
-            this.button7.TabIndex = 2;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(150, 24);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(118, 25);
-            this.textBox7.TabIndex = 1;
-            // 
-            // label9
-            // 
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label9.Location = new System.Drawing.Point(26, 24);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(118, 23);
-            this.label9.TabIndex = 0;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(274, 24);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(118, 26);
-            this.button5.TabIndex = 2;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(150, 24);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(118, 25);
-            this.textBox5.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label7.Location = new System.Drawing.Point(26, 24);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(118, 23);
-            this.label7.TabIndex = 0;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(274, 24);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(118, 26);
-            this.button6.TabIndex = 2;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(150, 24);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(118, 25);
-            this.textBox6.TabIndex = 1;
-            // 
-            // label8
-            // 
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label8.Location = new System.Drawing.Point(26, 24);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(118, 23);
-            this.label8.TabIndex = 0;
-            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.groupBox5);
@@ -427,6 +320,113 @@ namespace Study_RecursionFunction
             this.lboxResult.Size = new System.Drawing.Size(469, 544);
             this.lboxResult.TabIndex = 2;
             // 
+            // label8
+            // 
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label8.Location = new System.Drawing.Point(26, 24);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(118, 23);
+            this.label8.TabIndex = 0;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(150, 24);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(118, 25);
+            this.textBox6.TabIndex = 1;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(274, 24);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(118, 26);
+            this.button6.TabIndex = 2;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.groupBox8);
+            this.groupBox7.Controls.Add(this.button5);
+            this.groupBox7.Controls.Add(this.textBox5);
+            this.groupBox7.Controls.Add(this.label7);
+            this.groupBox7.Location = new System.Drawing.Point(6, 56);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(413, 138);
+            this.groupBox7.TabIndex = 3;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Level 2";
+            // 
+            // label7
+            // 
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label7.Location = new System.Drawing.Point(26, 24);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(118, 23);
+            this.label7.TabIndex = 0;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(150, 24);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(118, 25);
+            this.textBox5.TabIndex = 1;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(274, 24);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(118, 26);
+            this.button5.TabIndex = 2;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.button7);
+            this.groupBox8.Controls.Add(this.textBox7);
+            this.groupBox8.Controls.Add(this.label9);
+            this.groupBox8.Location = new System.Drawing.Point(9, 56);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(404, 66);
+            this.groupBox8.TabIndex = 4;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Level 3";
+            // 
+            // label9
+            // 
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label9.Location = new System.Drawing.Point(26, 24);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(118, 23);
+            this.label9.TabIndex = 0;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(150, 24);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(118, 25);
+            this.textBox7.TabIndex = 1;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(274, 24);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(118, 26);
+            this.button7.TabIndex = 2;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.groupBox7);
+            this.groupBox6.Controls.Add(this.button6);
+            this.groupBox6.Controls.Add(this.textBox6);
+            this.groupBox6.Controls.Add(this.label8);
+            this.groupBox6.Location = new System.Drawing.Point(13, 230);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(425, 200);
+            this.groupBox6.TabIndex = 4;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Level 1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -441,18 +441,18 @@ namespace Study_RecursionFunction
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numLevel)).EndInit();
             this.gboxCheckList.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -471,18 +471,6 @@ namespace Study_RecursionFunction
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox gboxCheckList;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button button4;
@@ -495,6 +483,18 @@ namespace Study_RecursionFunction
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox lboxResult;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label8;
     }
 }
 

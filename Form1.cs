@@ -46,17 +46,17 @@ namespace Study_RecursionFunction
 
         }
 
-        // gboxCheckList 찾기 -> Level에 해당하는 GroupBox찾기 -> 컨트롤 찾기 -> text작업 
+        // ★ GroupBox찾기 -> Control찾기 -> 해당 Level의 Control 싹 다 text작업
         private void ControlSearch(GroupBox CheckList, int iLevel, enControlType eControlType, string strTextBox)
         {
 
-            //  GroupBox 내에 있는 Control을 하나 씩 가져와서 체크 foreach. GroupBox 다 조사 후 Control작업
+            //  해당 GroupBox 안에 있는 Control을 하나 씩 가져와서 체크 foreach. Check List에 있는 컨트롤 검사 끝날때까지
             foreach (var item in CheckList.Controls)
             {
                 // Control 작업. 사용자 선택 Level과 일치하지 않으면 작업 X
                 if (CheckList.Text.Equals("Level " + iLevel))
                 {
-                    switch (eControlType)
+                    switch (eControlType)  //Label,TextBox, Button
                     {
                         case enControlType.Label:
                             if (item is Label)
@@ -84,12 +84,12 @@ namespace Study_RecursionFunction
                     }
                 }
 
-                // 처음 돌리면 여기먼저 온다(GroupBox가 젤 큰 박스인 Check List 이므로)
+                // 처음 돌리면 여기먼저 온다 Check List 아래에 큰 Groupbox 3개니까
                 // GroupBox안에 GroupBox가 또 있는 경우 또 다른 GroupBox를 기준으로 조사 ex)Check List였던 기준을 Level 1으로
                 // 현재 돌고있는 함수 다시 호출.
                 if (item is GroupBox)
                 {
-                    lboxResult.Items.Add(string.Format("현재 GroupBox : {0}, 다음 조사 할 GroupBox : {1} 로 이동", gboxCheckList.Text, ((GroupBox)item).Text));
+                    lboxResult.Items.Add(string.Format("현재 GroupBox : {0}, 다음 GroupBox : {1} 로 이동", CheckList.Text, ((GroupBox)item).Text));
                     ControlSearch((GroupBox)item, iLevel, eControlType, strTextBox);
                 }
             }
