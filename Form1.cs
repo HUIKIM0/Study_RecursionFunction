@@ -46,7 +46,7 @@ namespace Study_RecursionFunction
 
         }
 
-        // ★ GroupBox찾기 -> Control찾기 -> 해당 Level의 Control 싹 다 text작업
+        // 사용자가 선택한 Level(GroupBox) 컨트롤(Label/TextBox/Button) 을 찾아서 선택한 GroupBox,Control은 싹 다 작업
         private void ControlSearch(GroupBox gboxCheck, int iLevel, enControlType eControlType, string strTextBox)
         {
 
@@ -65,21 +65,24 @@ namespace Study_RecursionFunction
                             if (item is Label)
                             {
                                 ((Label)item).Text = strTextBox;
-                                lboxResult.Items.Add(string.Format("현재 GroupBox : {0}, Label Text : {1} 로 변경", gboxCheck.Text, strTextBox));
+                                lboxResult.Items.Add(string.Format("작업 GroupBox : {0}, Label Text : {1} 로 변경", gboxCheck.Text, strTextBox));
+                                lboxResult.Items.Add("\n");
                             }
                             break;
                         case enControlType.TextBox:
                             if (item is TextBox)
                             {
                                 ((TextBox)item).Text = strTextBox;
-                                lboxResult.Items.Add(string.Format("현재 GroupBox : {0}, TextBox Text : {1} 로 변경", gboxCheck.Text, strTextBox));
+                                lboxResult.Items.Add(string.Format("작업 GroupBox : {0}, TextBox Text : {1} 로 변경", gboxCheck.Text, strTextBox));
+                                lboxResult.Items.Add("\n");
                             }
                             break;
                         case enControlType.Button:
                             if (item is Button)
                             {
                                 ((Button)item).Text = strTextBox;
-                                lboxResult.Items.Add(string.Format("현재 GroupBox : {0}, Button Text : {1} 로 변경", gboxCheck.Text, strTextBox));
+                                lboxResult.Items.Add(string.Format("작업 GroupBox : {0}, Button Text : {1} 로 변경", gboxCheck.Text, strTextBox));
+                                lboxResult.Items.Add("\n");
                             }
                             break;
                         default:
@@ -87,21 +90,25 @@ namespace Study_RecursionFunction
                     }
                 }
 
-                // 사용자가 선택한 Level과는 안 맞지만  foreach로 꺼내온 컨트롤이 GroupBox라면
-                // 현재 돌고있는 함수 다시 호출. 재귀함수. ControlSearch함수 호출 시 다음 GroupBox를 새로운 기준으로 준다
+                // foreach로 꺼내온 컨트롤이 Label,TextBox,Button이 아닌 ★GroupBox라면
+                // 재귀함수. ControlSearch함수 호출 시 다음 GroupBox를 새로운 기준으로 준다
                 if (item is GroupBox)
                 {
+
                     lboxResult.Items.Add(string.Format("현재 GroupBox : {0}, 다음 GroupBox : {1} 로 이동", gboxCheck.Text, ((GroupBox)item).Text));
                     ControlSearch((GroupBox)item, iLevel, eControlType, strTextBox);
                 }
 
             }
 
+
+            //함수에 처음 들고 들어온 값 gboxCheckList와 검색을 다 돌고 나온 gboxCheck가 같다면 끝이라 판단
             if(gboxCheckList == gboxCheck)
             {
                 lboxResult.Items.Add(string.Format("END"));
                 lboxResult.Items.Add(string.Format("\n"));
             }
         }
+
     }
 }
