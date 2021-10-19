@@ -29,6 +29,7 @@ namespace Study_RecursionFunction
         // Level선택,Control선택,Text입력 -> 버튼 클릭 시 해당레벨의 해당컨트롤에 Text입력
         private void btnExe_Click(object sender, EventArgs e)
         {
+
             //레벨 선택
             int iLevel = (int)numLevel.Value;
 
