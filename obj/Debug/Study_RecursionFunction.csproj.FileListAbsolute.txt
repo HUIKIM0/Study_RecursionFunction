@@ -1,10 +1,10 @@
 D:\dev\C#Work\Study_RecursionFunction\Study_RecursionFunction\bin\Debug\Study_RecursionFunction.exe.config
 D:\dev\C#Work\Study_RecursionFunction\Study_RecursionFunction\bin\Debug\Study_RecursionFunction.exe
 D:\dev\C#Work\Study_RecursionFunction\Study_RecursionFunction\bin\Debug\Study_RecursionFunction.pdb
-D:\dev\C#Work\Study_RecursionFunction\Study_RecursionFunction\obj\Debug\Study_RecursionFunction.csprojAssemblyReference.cache
 D:\dev\C#Work\Study_RecursionFunction\Study_RecursionFunction\obj\Debug\Study_RecursionFunction.Form1.resources
 D:\dev\C#Work\Study_RecursionFunction\Study_RecursionFunction\obj\Debug\Study_RecursionFunction.Properties.Resources.resources
 D:\dev\C#Work\Study_RecursionFunction\Study_RecursionFunction\obj\Debug\Study_RecursionFunction.csproj.GenerateResource.cache
 D:\dev\C#Work\Study_RecursionFunction\Study_RecursionFunction\obj\Debug\Study_RecursionFunction.csproj.CoreCompileInputs.cache
 D:\dev\C#Work\Study_RecursionFunction\Study_RecursionFunction\obj\Debug\Study_RecursionFunction.exe
 D:\dev\C#Work\Study_RecursionFunction\Study_RecursionFunction\obj\Debug\Study_RecursionFunction.pdb
+D:\dev\C#Work\Study_RecursionFunction\Study_RecursionFunction\obj\Debug\Study_RecursionFunction.csproj.AssemblyReference.cache
