@@ -17,6 +17,7 @@ namespace Study_RecursionFunction
             InitializeComponent();
         }
 
+
         enum enControlType
         {
             UnKnown,
