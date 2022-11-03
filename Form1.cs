@@ -27,6 +27,7 @@ namespace Study_RecursionFunction
         }
 
 
+        string rdoCheck;
         // Level선택,Control선택,Text입력 -> 버튼 클릭 시 해당레벨의 해당컨트롤에 Text입력
         private void btnExe_Click(object sender, EventArgs e)
         {
@@ -34,8 +35,10 @@ namespace Study_RecursionFunction
             //레벨 선택
             int iLevel = (int)numLevel.Value;
 
+
+
             //컨트롤러 선택
-            enControlType eControlType = enControlType.UnKnown;   
+            enControlType eControlType = enControlType.UnKnown;
 
             if (rdoLabel.Checked) eControlType = enControlType.Label;
             else if (rdoTextBox.Checked) eControlType = enControlType.TextBox;
@@ -49,8 +52,14 @@ namespace Study_RecursionFunction
         }
 
         // 사용자가 선택한 Level(GroupBox) 컨트롤(Label/TextBox/Button) 을 찾아서 선택한 GroupBox,Control은 싹 다 작업
+        //enControlType eControlType
         private void ControlSearch(GroupBox gboxCheck, int iLevel, enControlType eControlType, string strTextBox)
         {
+
+            foreach (var oitem in gboxCheck.Controls)
+            {
+                lboxResult.Items.Add(oitem.ToString());
+            }
 
             // 현재 GroupBox 안에 있는 Control을 하나 씩 가져오는 foreach.
             foreach (var item in gboxCheck.Controls)
@@ -62,6 +71,7 @@ namespace Study_RecursionFunction
                 {
                     switch (eControlType)  //그룹 안의 Label,TextBox, Button 찾기
                     {
+                        //case enControlType.Label:
                         case enControlType.Label:
                             if (item is Label)
                             {
@@ -105,13 +115,11 @@ namespace Study_RecursionFunction
 
 
             //함수에 처음 들고 들어온 값 gboxCheckList와 검색을 다 돌고 나온 gboxCheck가 같다면 끝이라 판단
-            if(gboxCheckList == gboxCheck)
+            if (gboxCheckList == gboxCheck)
             {
                 lboxResult.Items.Add(string.Format("END"));
                 lboxResult.Items.Add(string.Format("\n"));
             }
         }
-
-
     }
 }
